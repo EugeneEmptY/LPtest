@@ -1,6 +1,6 @@
 <?php
 /* Подключение к базе данных, для проверки работоспособности формы входа */
-$servername = "mediavalenttask.local";
+$servername = "mediavalenttask";
 $dBUsername = "root";
 $dBPassword = "";
 $dBName = "horrorlibrary";
