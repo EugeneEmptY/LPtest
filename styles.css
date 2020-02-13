@@ -1,0 +1,513 @@
+/*global*/
+
+fieldset{
+	border: solid 2px #F00;
+	background: #000;
+	opacity: 1;
+	margin-top: 10px;
+	color: yellow;
+	width: 500px;
+	height: 300px;
+}
+.mdl{
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+
+.rotate:hover {
+  -webkit-transform: rotateZ(-20deg);
+  -ms-transform: rotateZ(-20deg);
+  transform: rotateZ(-20deg);
+}
+
+.rotate2:hover {
+  -webkit-transform: rotateZ(20deg);
+  -ms-transform: rotateZ(20deg);
+  transform: rotateZ(20deg);
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* swing animation */
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.swing:hover {
+  -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease;
+   -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+}
+
+/* header */
+
+.header{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	padding: 0 4.5%;
+}
+.logo{
+	width: 217.125px;
+	height: 92.25px;
+}
+.logo__img{
+	width: 100%;
+}
+
+/* menu */
+
+.menu{
+	margin-left: auto;
+}
+
+.menu__list{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 80%;
+}
+
+.menu__item{
+	margin-right: 15px;
+}
+
+/*.menu__link{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 45px;
+	color: #ff0000;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-align: center;
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}*/
+
+.empty__button {
+	background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*section main*/
+
+.main{
+	background-image: url('images/layout/BG.jpg');
+	background-size: 100% 100%;
+	height: 110vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.main__title{
+	font-size: 36px;
+	font-family: 'Feast of Flesh BB';
+	src: url('fonts/4791.ttf');
+	text-align: center;
+	line-height: 50px;
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.main__title__registration{
+	font-size: 18px;
+	font-family: 'Feast of Flesh BB';
+	src: url('fonts/4791.ttf');
+	text-align: center;
+	line-height: 10px;
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.main__title2{
+	font-size: 24px;
+	font-family: 'Run! Demo';
+	src: url('fonts/Run! Demo.ttf');
+	text-align: center;
+	line-height: 50px;
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.main__title-big{
+	display: block;
+	font-size: 108px;
+	color: red;
+	line-height: 50px;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.main__title-big2{
+	display: block;
+	font-size: 75px;
+	color: red;
+	line-height: 50px;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+/* content */
+
+.content{
+	background-image: url('images/layout/ContentP1BG.jpg');
+	background-size: 100% 100%;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5px;
+}
+
+.content__main{
+	display: block;
+	font-size: 60px;
+	color: red;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.content__list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.content__item{
+	width: 360px;
+	text-align: center;
+}
+
+.content__description{
+	margin: 0;
+	font-size: 20px; 
+	font-weight: 300;
+	line-height: 18px;
+}
+
+.content__title{
+	display: block;
+	font-size: 40px;
+	color: red;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.content__description{
+	display: block;
+	font-size: 15px;
+	color: white;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'Run! Demo';
+	src: url('fonts/Run! Demo.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.content__dots{
+	font-size: 50px;
+	color: white;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.content__description-crossed{
+	font-size: 15px;
+	color: red;
+	line-height: 5px;
+	text-align: center;
+	text-decoration: line-through;
+	font-family: 'Run! Demo';
+	src: url('fonts/Run! Demo.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+/* authors */
+
+.authors{
+	background-image: url('images/layout/AuthorsBG.jpg');
+	background-size: 100% 100%;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5px;
+}
+
+.authors__main{
+	display: block;
+	font-size: 60px;
+	color: red;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.authors__list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.authors__item{
+	width: 33%;
+	text-align: center;
+	list-style: none;
+}
+
+.authors__title{
+	display: block;
+	font-size: 40px;
+	color: red;
+	line-height: 1px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+/* reviews */
+
+.reviews{
+	background-image: url('images/layout/ReviewsBG.jpg');
+	background-size: 100% 100%;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5px;
+}
+
+.reviews__main{
+	display: block;
+	font-size: 60px;
+	color: red;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.reviews__list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews__item{
+	width: 50%;
+	text-align: center;
+	list-style: none;
+}
+
+.reviews__footer{
+	display: block;
+	font-size: 37.5px;
+	color: #fff;
+	line-height: 1px;
+	text-align: center;
+	font-family: 'Duck Hunt';
+	src: url('fonts/duckhunt.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+} 
+
+/* Content last part */
+
+.content__last{
+	background-image: url('images/layout/ContentLastPartBG.jpg');
+	background-size: 100% 100%;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5px;
+}
+
+.content__last__main{
+	display: block;
+	font-size: 60px;
+	color: red;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.content__last__list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.content__last__item{
+	width: 360px;
+	text-align: center;
+}
+
+.content__last__description{
+	margin: 0;
+	font-size: 20px; 
+	font-weight: 300;
+	line-height: 18px;
+}
+
+.content__last__title{
+	display: block;
+	font-size: 40px;
+	color: green;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.content__last__description{
+	display: block;
+	font-size: 15px;
+	color: white;
+	line-height: 5px;
+	text-align: center;
+	font-family: 'Run! Demo';
+	src: url('fonts/Run! Demo.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+.content__last__description-crossed{
+	font-size: 15px;
+	color: red;
+	line-height: 5px;
+	text-align: center;
+	text-decoration: line-through;
+	font-family: 'Run! Demo';
+	src: url('fonts/Run! Demo.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
+
+/* footer */
+.footer{
+	background-image: url('images/layout/Footer.jpg');
+	background-size: 100% 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5px;
+}
+
+.footer__foot{
+	display: block;
+	font-size: 60px;
+	color: red;
+	line-height: 1px;
+	text-align: center;
+	bottom-margin: 10px;
+	font-family: 'who asks satan';
+	src: url('fonts/who asks satan.ttf');
+	text-shadow: black 2px 2px 0, black -2px -2px 0, 
+                 black -2px 2px 0, black 2px -2px 0;
+}
